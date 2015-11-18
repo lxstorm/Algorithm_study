@@ -80,7 +80,7 @@ MaxSubSum(const int A[], int Left, int Right)
 	}
 
 	return Max3(MaxLeftSum, MaxRightSum,
-					 MaxLeftBorderSum + MaxRightBorderSum);
+                MaxLeftBorderSum + MaxRightBorderSum);
 }
 
 int MaxSubsequenceSum_V3(const int A[], int N)
