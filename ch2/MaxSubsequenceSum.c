@@ -6,7 +6,7 @@ int MaxSubsequenceSum_V3(const int A[], int N);
 static int MaxSubSum(const int A[], int left, int right);
 int Max3(int a, int b, int c);
 
-int 
+int
 MaxSubsequenceSum_V1(const int A[], int N)
 {
 	int MaxSum = 0;
@@ -101,11 +101,27 @@ int Max3(int a, int b, int c)
 		max =c;
 }
 
+int MaxSubsequenceSum_V4(const int A[], int N)
+{
+     int ThisSum, MaxSum, j;
+
+     ThisSum = MaxSum = 0;
+     for(j = 0; j < N; j++){
+         ThisSum += A[j];
+
+         if(ThisSum > MaxSum)
+             MaxSum = ThisSum;
+         else if(ThisSum < 0)
+             ThisSum = 0;
+     }
+     return MaxSum;
+}
+
 int main()
 {
 	const int A[] = {3, 5, -6, 7, 9};
 	int MaxSum;
 
-	MaxSum = MaxSubsequenceSum_V3(A, 5);
+	MaxSum = MaxSubsequenceSum_V4(A, 5);
 	printf("%d\n",MaxSum);
 }
