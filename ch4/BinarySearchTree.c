@@ -100,6 +100,14 @@ SearchTree Delete(ElementType X, SearchTree)
 
 		return T;
 	}
+}
 
-
+void PrintTree(SearchTree T)
+{
+	if(T != NULL)
+	{
+		PrintTree(T->Left);
+		PrintElement(T->Element);
+		PrintTreee(T->Right);
+	}
 }
