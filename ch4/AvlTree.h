@@ -1,4 +1,4 @@
-#ifdef _AvlTree_H
+#ifndef _AvlTree_H
 
 struct AvlNode;
 typedef struct AvlNode *Position;

@@ -1,4 +1,4 @@
-#ifdef _Queue_h
+#ifndef _Queue_h
 
 struct QueueRecord;
 typedef struct QueueRecord *Queue;

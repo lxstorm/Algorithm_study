@@ -1,4 +1,4 @@
-#ifdef _BinarySearchTree_H
+#ifndef _BinarySearchTree_H
 struct TreeNode;
 typedef struct TreeNode *Position;
 typedef struct TreeNode *SearchTree;

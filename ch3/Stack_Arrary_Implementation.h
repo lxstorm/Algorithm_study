@@ -1,4 +1,4 @@
-#ifdef _Stack_h
+#ifndef _Stack_h
 
 struct StackRecord;
 typedef struct StackRecord *Stack;

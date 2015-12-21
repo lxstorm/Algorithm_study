@@ -1,4 +1,4 @@
-#ifdef _Stack_h
+#ifndef _Stack_h
 
 struct Node;
 typedef struct Node *PtrToNode;
