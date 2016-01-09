@@ -1,4 +1,4 @@
-#ifdef _Cursor_H
+#ifndef _Cursor_H
 
 typedef int PtrToNode;
 typedef PtrToNode List;
